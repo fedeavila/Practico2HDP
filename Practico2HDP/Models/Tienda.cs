@@ -13,5 +13,6 @@ namespace Practico2HDP.Models
         public string Direccion { get; set; }
         public string Tel { get; set; }
         public string Email { get; set; }
+        public string? Web { get; set; }
     }
 }
