@@ -14,7 +14,7 @@ namespace Practico2HDP.Models
         public string Tel { get; set; }
         public string Email { get; set; }
 
-        // Esta prop la agregue despues se hacer la 1er migracion pero no logro que funcione :/
+        // Esta prop la agregue despues se hacer la 1er migracion pero no logro que funcione.
         public string? Web { get; set; } 
     }
 }
