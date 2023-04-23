@@ -56,7 +56,7 @@ namespace Practico2HDP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TiendaID,RazonSocial,Direccion,Tel,Email")] Tienda tienda)
+        public async Task<IActionResult> Create([Bind("TiendaID,RazonSocial,Direccion,Tel,Email,Web")] Tienda tienda)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace Practico2HDP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("TiendaID,RazonSocial,Direccion,Tel,Email")] Tienda tienda)
+        public async Task<IActionResult> Edit(int id, [Bind("TiendaID,RazonSocial,Direccion,Tel,Email,Web")] Tienda tienda)
         {
             if (id != tienda.TiendaID)
             {
