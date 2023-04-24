@@ -17,5 +17,7 @@ namespace Practico2HDP.Data
         public DbSet<Practico2HDP.Models.Bicicleta> Bicicleta { get; set; } = default!;
 
         public DbSet<Practico2HDP.Models.Tienda> Tienda { get; set; } = default!;
+
+        public DbSet<Practico2HDP.Models.Cliente> Cliente { get; set; } = default!;
     }
 }

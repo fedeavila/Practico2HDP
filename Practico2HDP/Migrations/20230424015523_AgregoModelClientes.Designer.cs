@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Practico2HDP.Data;
 
@@ -10,9 +11,11 @@ using Practico2HDP.Data;
 namespace Practico2HDP.Migrations
 {
     [DbContext(typeof(BiciContext))]
-    partial class BiciContextModelSnapshot : ModelSnapshot
+    [Migration("20230424015523_AgregoModelClientes")]
+    partial class AgregoModelClientes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.5");

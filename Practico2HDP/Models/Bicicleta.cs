@@ -18,5 +18,7 @@ namespace Practico2HDP.Models
 
         [Display(Name = "Año")]
         public int Anio { get; set; }
+
+        // Relaciones
     }
 }
